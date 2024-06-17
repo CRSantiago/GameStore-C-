@@ -1,0 +1,29 @@
+GET http://localhost:5222/games
+
+###
+GET http://localhost:5222/games/3
+
+###
+POST http://localhost:5222/games
+Content-Type: application/json
+
+{
+    "name": "Call of Duty Black Ops 5",
+    "genre": "FPS",
+    "price": 59.99,
+    "releaseDate": "2020-11-13"
+}
+
+###
+PUT http://localhost:5222/games/1
+Content-Type: application/json
+
+{
+    "name": "Call of Duty Black Ops 6",
+    "genre": "FPS",
+    "price": 69.99,
+    "releaseDate": "2024-10-13"
+}
+
+### 
+DELETE http://localhost:5222/games/2
